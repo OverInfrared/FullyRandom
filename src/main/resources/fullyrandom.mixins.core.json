@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "over.fullyrandom.mixin.core",
+  "refmap": "fullyrandom.refmap.json",
+  "target": "@env(DEFAULT)",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "client.renderer.model.MixinModelResourceLocation"
+  ]
+}
