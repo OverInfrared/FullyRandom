@@ -12,18 +12,18 @@ import java.util.Random;
 public class RandomOre extends Block {
 
     private static int id;
-    public RandomOre(int num) {
+    RandomOre(int num) {
         super(getRandomProperties());
         id = num;
     }
 
     private static Properties getRandomProperties() {
-        RandomOre.AppearsIn material = getRandomMaterial();
+        AppearsIn material = getRandomMaterial();
         return Properties.create(material.mat).sound(material.sound).hardnessAndResistance(material.hardness).harvestTool(material.tool).harvestLevel(new Random(Randomizer.getSeed(id)).nextInt(2 + 1) + 1);
     }
 
-    private static RandomOre.AppearsIn getRandomMaterial() {
-        RandomOre.AppearsIn mat[] = RandomOre.AppearsIn.values();
+    private static AppearsIn getRandomMaterial() {
+        AppearsIn[] mat = AppearsIn.values();
         return mat[new Random(Randomizer.getSeed(id)).nextInt(mat.length)];
     }
 
@@ -45,10 +45,5 @@ public class RandomOre extends Block {
             this.hardness = hardness;
             this.tool = tool;
         }
-    }
-
-    public static int blockColor;
-    public static int getColor(int id) {
-        return new Random(Randomizer.getSeed(id)).nextInt(0xffffff + 1);
     }
 }

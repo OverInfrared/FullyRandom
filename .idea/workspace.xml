@@ -1,254 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87fcb608-eea8-48e8-959e-908950e59b2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/ColorHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/Randomizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/blockstates/stone_regular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/block/stone_regular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/item/stone_regular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/annotation-processors.bin" afterDir="false" />
+    <list default="true" id="87fcb608-eea8-48e8-959e-908950e59b2a" name="Default Changelist" comment="Added overlays to ores.">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/blockstates/stone_emerald.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/blockstates/stone_lapis.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/blockstates/stone_quartz.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/block/stone_emerald.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/block/stone_lapis.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/block/stone_quartz.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/item/stone_emerald.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/item/stone_lapis.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/item/stone_quartz.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_electronwill_night_config_core_3_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_electronwill_night_config_toml_3_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_21_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_ibm_icu_icu4j_core_mojang_51_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mojang_authlib_1_5_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mojang_brigadier_1_0_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mojang_datafixerupper_2_0_24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mojang_javabridge_1_0_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mojang_patchy_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mojang_text2speech_1_11_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mojang_text2speech_natives_windows_1_11_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_io_commons_io_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__cpw_mods_grossjava9hacks_1_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__cpw_mods_modlauncher_5_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__cpw_mods_modlauncher_api_5_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_all_4_1_25_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__it_unimi_dsi_fastutil_8_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_dev_jna_jna_4_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_dev_jna_platform_3_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_jinput_jinput_2_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_jinput_jinput_platform_natives_linux_2_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_jinput_jinput_platform_natives_osx_2_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_jinput_jinput_platform_natives_windows_2_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_java_jutils_jutils_1_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_jodah_typetools_0_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minecraft_client_extra_1_15_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minecraft_mappings_stable_zip_60_1_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minecraftforge_accesstransformers_shadowed_2_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minecraftforge_coremods_2_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minecraftforge_eventbus_service_2_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minecraftforge_forge_1_15_2_31_2_9_mapped_stable_60_1_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minecraftforge_forge_launcher_1_15_2_31_2_9_mapped_stable_60_1_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minecraftforge_forgespi_2_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minecraftforge_mergetool_api_1_0_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minecraftforge_unsafe_0_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minecrell_terminalconsoleappender_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_jopt_simple_jopt_simple_5_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_antlr_antlr4_runtime_4_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_compress_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_api_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_core_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_maven_maven_artifact_3_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_plexus_plexus_utils_3_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jline_jline_3_12_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jline_jline_reader_3_12_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jline_jline_terminal_3_12_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_glfw_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_glfw_natives_windows_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_jemalloc_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_jemalloc_natives_windows_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_natives_windows_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_openal_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_openal_natives_windows_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_opengl_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_opengl_natives_windows_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_stb_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_stb_natives_windows_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_tinyfd_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_lwjgl_lwjgl_tinyfd_natives_windows_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_analysis_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_commons_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_tree_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_util_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_spongepowered_mixin_0_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__oshi_project_oshi_core_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/FullyRandom.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/FullyRandom.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/FullyRandom.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/FullyRandom.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/runClient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/runClient.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/runData.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/runData.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/runServer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/runServer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/createMcpToSrg/output.tsrg" beforeDir="false" afterPath="$PROJECT_DIR$/build/createMcpToSrg/output.tsrg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/createSrgToMcp/output.srg" beforeDir="false" afterPath="$PROJECT_DIR$/build/createSrgToMcp/output.srg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/downloadMCMeta/version.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/downloadMCMeta/version.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extractSrg/output.srg" beforeDir="false" afterPath="$PROJECT_DIR$/build/extractSrg/output.srg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/META-INF/mods.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/fullyrandom/blockstates/test_block_no.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/fullyrandom/blockstates/test_block_yes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/fullyrandom/models/item/test_block_no.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/fullyrandom/models/item/test_block_yes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/fullyrandom.mixins.core.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/fullyrandom.mixins.core.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/pack.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/pack.mcmeta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/fullyrandom/models/item/stone_regular.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/fullyrandom/models/item/stone_regular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileJava-mappings.tsrg" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileJava-mappings.tsrg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/.mixin.out/audit/mixin_implementation_report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/.mixin.out/audit/mixin_implementation_report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/config/forge-client.toml" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/forge-client.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-31_12.10.34-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-29-10.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-29-11.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-29-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-29-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-29-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-29-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-29-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-29-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-29-8.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-29-9.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-10.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-31-10.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-11.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-12.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-13.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-14.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-31-2.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-31-3.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-31-4.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-31-5.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-31-6.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-31-7.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-8.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-31-8.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-9.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-31-9.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/data/capabilities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/data/capabilities.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/data/raids.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/level.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/level.dat_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/poi/r.-1.-1.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/poi/r.-1.0.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/poi/r.0.-1.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/poi/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/poi/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/region/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/region/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/region/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/region/r.1.-1.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/region/r.1.0.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/serverconfig/forge-server.toml" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/serverconfig/forge-server.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/session.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (1)/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (1)/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (2)/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (2)/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (2)/data/capabilities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (2)/data/capabilities.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (2)/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (2)/data/raids.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (2)/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (2)/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (2)/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (2)/level.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (2)/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (2)/level.dat_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (2)/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (2)/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (2)/poi/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (2)/poi/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (2)/poi/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (2)/poi/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (2)/poi/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (2)/poi/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (2)/poi/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (2)/poi/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (2)/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (2)/region/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (2)/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (2)/region/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (2)/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (2)/region/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (2)/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (2)/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (2)/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (2)/session.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (2)/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (2)/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (3)/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (3)/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (3)/data/capabilities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (3)/data/capabilities.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (3)/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (3)/data/raids.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (3)/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (3)/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (3)/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (3)/level.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (3)/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (3)/level.dat_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (3)/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (3)/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (3)/poi/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (3)/poi/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (3)/poi/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (3)/poi/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (3)/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (3)/region/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (3)/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (3)/region/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (3)/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (3)/region/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (3)/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (3)/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (3)/serverconfig/forge-server.toml" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (3)/serverconfig/forge-server.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (3)/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (3)/session.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (3)/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (3)/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/data/capabilities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/data/capabilities.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/data/raids.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/level.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/level.dat_old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/poi/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/poi/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/poi/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/poi/r.-1.0.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/poi/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/poi/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/poi/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/poi/r.0.0.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/region/r.-1.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/region/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/region/r.-1.1.mca" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/region/r.0.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/region/r.0.1.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/session.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/poi/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/poi/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/poi/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/poi/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/poi/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/poi/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/serverconfig/forge-server.toml" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/serverconfig/forge-server.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/session.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/Fullyrandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/Fullyrandom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/ColorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/ColorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/Randomizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/Randomizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/blocks/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/blocks/ModBlocks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/blocks/RandomOre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/blocks/RandomOre.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/mixin/core/client/renderer/model/MixinModelResourceLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/mixin/core/client/renderer/model/MixinModelResourceLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/blockstates/test_block_no.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/blockstates/test_block_yes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/item/test_block_no.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/item/test_block_yes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/item/stone_regular.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/item/stone_regular.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -350,6 +147,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -362,24 +160,30 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/textures" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/item" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\OverInfrared\Desktop\FullyRandom\src\main\resources\assets\fullyrandom\textures" />
-      <recent name="C:\Users\OverInfrared\Desktop\FullyRandom\src\main\resources\META-INF" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="over.fullyrandom.blocks" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\OverInfrared\Desktop\FullyRandom\src\main\resources" />
       <recent name="C:\Users\OverInfrared\Desktop\FullyRandom\src\main\resources\META-INF" />
       <recent name="C:\Users\OverInfrared\Desktop\FullyRandom\src\main\java" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="over.fullyrandom" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="over.fullyrandom.blocks" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\OverInfrared\Desktop\FullyRandom\src\main\resources\assets\fullyrandom\models\item" />
+      <recent name="C:\Users\OverInfrared\Desktop\FullyRandom\src\main\resources\assets\fullyrandom\models\block" />
+      <recent name="C:\Users\OverInfrared\Desktop\FullyRandom\src\main\resources\assets\fullyrandom\blockstates" />
+      <recent name="C:\Users\OverInfrared\Desktop\FullyRandom\src\main\resources\assets\fullyrandom\textures" />
+      <recent name="C:\Users\OverInfrared\Desktop\FullyRandom\src\main\resources\META-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -494,7 +298,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -503,6 +309,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Updated 1.16.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated 1.16.1" />
+    <MESSAGE value="Added overlays to ores." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added overlays to ores." />
   </component>
 </project>

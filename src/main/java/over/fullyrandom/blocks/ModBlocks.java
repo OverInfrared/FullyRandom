@@ -1,6 +1,8 @@
 package over.fullyrandom.blocks;
 
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.FallingBlock;
 import net.minecraft.block.material.Material;
 import over.fullyrandom.config.MainConfig;
 

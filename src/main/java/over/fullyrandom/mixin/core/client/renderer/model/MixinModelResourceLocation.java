@@ -4,33 +4,41 @@ import net.minecraft.client.renderer.model.ModelResourceLocation;
 import net.minecraft.util.ResourceLocation;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
+import org.spongepowered.asm.mixin.Shadow;
 import over.fullyrandom.Fullyrandom;
+import over.fullyrandom.Randomizer;
+import over.fullyrandom.config.MainConfig;
 
 @Mixin(ModelResourceLocation.class)
-public class MixinModelResourceLocation extends ResourceLocation {
+public abstract class MixinModelResourceLocation extends ResourceLocation {
 
     protected MixinModelResourceLocation(String[] resourceParts) {
         super(resourceParts);
     }
 
+    private static int index = 0;
     /**
-     * @author fghj
+     * @author OverInfrared
      */
     @Overwrite
     protected static String[] parsePathString(String pathIn) {
 
-        if (!pathIn.substring(0, 9).equals("minecraft"))
-            if (pathIn.substring(0, 17).equals("fullyrandom:r_ore"))
-                if (pathIn.substring(pathIn.length() - 9).equals("inventory"))
-                    pathIn = "fullyrandom:stone_regular#inventory";
-                else
-                    pathIn = "fullyrandom:stone_regular#";
-
+        String overlay = Randomizer.blockProperties.getOverlay(index);
+        if (pathIn.contains("fullyrandom:r_ore")) {
+            if (pathIn.contains("r_ore0"))
+                index = 0;
+            if (!pathIn.contains("inventory")) {
+                pathIn = "fullyrandom:stone_" + overlay.toLowerCase() + "#";
+            } else {
+                pathIn = "fullyrandom:stone_" + overlay.toLowerCase() + "#inventory";
+            }
+            index++;
+        }
         String[] astring = new String[]{null, pathIn, ""};
         int i = pathIn.indexOf(35);
         String s = pathIn;
         if (i >= 0) {
-            astring[2] = pathIn.substring(i + 1, pathIn.length());
+            astring[2] = pathIn.substring(i + 1);
             if (i > 1) {
                 s = pathIn.substring(0, i);
             }

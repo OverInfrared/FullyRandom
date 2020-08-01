@@ -1,1 +1,3 @@
-{"parent":"fullyrandom:block/stone_regular"}
+{
+  "parent": "fullyrandom:block/stone_regular"
+}
