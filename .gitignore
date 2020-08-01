@@ -23,3 +23,13 @@
 hs_err_pid*
 /run/
 /.idea/
+/run/.mixin.out/
+/run/config/
+/run/defaultconfigs/
+/run/logs/
+/run/mods/
+/run/resourcepacks/
+/run/saves/
+/run/options.txt
+/run/usercache.json
+/run/usernamecache.json

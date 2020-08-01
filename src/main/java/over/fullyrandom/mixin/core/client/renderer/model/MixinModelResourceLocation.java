@@ -19,13 +19,12 @@ public class MixinModelResourceLocation extends ResourceLocation {
     @Overwrite
     protected static String[] parsePathString(String pathIn) {
 
-        if (pathIn.equals("fullyrandom:test_block_yes#")) {
-            pathIn = "fullyrandom:test_block_no#";
-        }
-
-        if (pathIn.equals("fullyrandom:test_block_yes#inventory")) {
-            pathIn = "fullyrandom:test_block_no#inventory";
-        }
+        if (!pathIn.substring(0, 9).equals("minecraft"))
+            if (pathIn.substring(0, 17).equals("fullyrandom:r_ore"))
+                if (pathIn.substring(pathIn.length() - 9).equals("inventory"))
+                    pathIn = "fullyrandom:test_block_yes#inventory";
+                else
+                    pathIn = "fullyrandom:test_block_yes#";
 
         String[] astring = new String[]{null, pathIn, ""};
         int i = pathIn.indexOf(35);
