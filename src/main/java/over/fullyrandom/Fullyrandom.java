@@ -2,6 +2,8 @@ package over.fullyrandom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -19,6 +21,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import over.fullyrandom.blocks.ModBlocks;
 import over.fullyrandom.config.Config;
 import over.fullyrandom.setup.ClientProxy;
 import over.fullyrandom.setup.IProxy;
@@ -66,7 +69,9 @@ public class Fullyrandom {
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
-
+        for (Block block: ModBlocks.oreBlocks) {
+            RenderTypeLookup.setRenderLayer(block, RenderType.getCutoutMipped());
+        }
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event) {

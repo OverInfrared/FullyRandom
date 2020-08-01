@@ -1,11 +1,21 @@
 {
+  "minecraft:recipes/misc/iron_ingot_from_blasting": {
+    "criteria": {
+      "has_iron_ore": "2020-08-01 01:08:02 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot": {
+    "criteria": {
+      "has_iron_ore": "2020-08-01 01:08:02 -0700"
+    },
+    "done": true
+  },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:desert_hills": "2020-07-31 12:16:37 -0700",
-      "minecraft:desert": "2020-07-31 12:16:39 -0700",
-      "minecraft:river": "2020-07-31 12:16:11 -0700"
+      "minecraft:savanna_plateau": "2020-08-01 01:07:46 -0700"
     },
     "done": false
   },
-  "DataVersion": 2230
+  "DataVersion": 2567
 }

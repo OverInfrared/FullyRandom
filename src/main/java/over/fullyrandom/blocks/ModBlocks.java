@@ -9,8 +9,9 @@ public class ModBlocks {
     public static Block[] oreBlocks = new Block[MainConfig.oreAmount.get()];
 
     public static void setOreBlocks(int amount) {
-        for (int i = 0; i < amount; i++)
-            oreBlocks[i] = new RandomOre().setRegistryName("fullyrandom:r_ore" + i);
+        for (int i = 0; i < amount; i++) {
+            oreBlocks[i] = new RandomOre(i).setRegistryName("fullyrandom:r_ore" + i);
+        }
     }
 
 }

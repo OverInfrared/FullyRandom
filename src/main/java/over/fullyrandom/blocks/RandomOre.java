@@ -5,23 +5,26 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.world.gen.placement.CountRangeConfig;
 import net.minecraftforge.common.ToolType;
+import over.fullyrandom.Randomizer;
 
 import java.util.Random;
 
 public class RandomOre extends Block {
 
-    public RandomOre() {
+    private static int id;
+    public RandomOre(int num) {
         super(getRandomProperties());
+        id = num;
     }
 
-    public static Properties getRandomProperties() {
+    private static Properties getRandomProperties() {
         RandomOre.AppearsIn material = getRandomMaterial();
-        return Properties.create(material.mat).sound(material.sound).hardnessAndResistance(material.hardness).harvestTool(material.tool).harvestLevel(new Random(1).nextInt(2 + 1) + 1);
+        return Properties.create(material.mat).sound(material.sound).hardnessAndResistance(material.hardness).harvestTool(material.tool).harvestLevel(new Random(Randomizer.getSeed(id)).nextInt(2 + 1) + 1);
     }
 
-    public static RandomOre.AppearsIn getRandomMaterial() {
+    private static RandomOre.AppearsIn getRandomMaterial() {
         RandomOre.AppearsIn mat[] = RandomOre.AppearsIn.values();
-        return mat[new Random(1).nextInt(mat.length)];
+        return mat[new Random(Randomizer.getSeed(id)).nextInt(mat.length)];
     }
 
     public enum AppearsIn {
@@ -41,7 +44,11 @@ public class RandomOre extends Block {
             this.sound = sound;
             this.hardness = hardness;
             this.tool = tool;
-
         }
+    }
+
+    public static int blockColor;
+    public static int getColor(int id) {
+        return new Random(Randomizer.getSeed(id)).nextInt(0xffffff + 1);
     }
 }

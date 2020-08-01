@@ -22,9 +22,9 @@ public class MixinModelResourceLocation extends ResourceLocation {
         if (!pathIn.substring(0, 9).equals("minecraft"))
             if (pathIn.substring(0, 17).equals("fullyrandom:r_ore"))
                 if (pathIn.substring(pathIn.length() - 9).equals("inventory"))
-                    pathIn = "fullyrandom:test_block_yes#inventory";
+                    pathIn = "fullyrandom:stone_regular#inventory";
                 else
-                    pathIn = "fullyrandom:test_block_yes#";
+                    pathIn = "fullyrandom:stone_regular#";
 
         String[] astring = new String[]{null, pathIn, ""};
         int i = pathIn.indexOf(35);
