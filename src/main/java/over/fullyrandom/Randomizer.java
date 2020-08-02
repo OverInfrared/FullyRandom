@@ -59,6 +59,10 @@ public class Randomizer {
             }
         }
 
+        public static boolean getOreType(int id) {
+            return new Random(getSeed(id)).nextBoolean();
+        }
+
     }
 
 }

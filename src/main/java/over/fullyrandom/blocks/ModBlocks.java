@@ -4,6 +4,7 @@ import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.FallingBlock;
 import net.minecraft.block.material.Material;
+import net.minecraft.loot.LootTable;
 import over.fullyrandom.Fullyrandom;
 import over.fullyrandom.Randomizer;
 import over.fullyrandom.config.MainConfig;

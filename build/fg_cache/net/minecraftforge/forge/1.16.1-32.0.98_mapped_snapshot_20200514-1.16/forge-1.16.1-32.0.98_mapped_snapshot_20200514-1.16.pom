@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.minecraftforge</groupId>
   <artifactId>forge</artifactId>
-  <version>1.16.1-32.0.98_mapped_snapshot_20200514-1.16_at_da39a3ee5e6b4b0d3255bfef95601890afd80709</version>
+  <version>1.16.1-32.0.98_mapped_snapshot_20200514-1.16_at_375f5b47cc501f1e7ce8fca2d622f5d6d1586bcf</version>
   <name>forge</name>
   <dependencies>
     <dependency>
@@ -170,7 +170,7 @@
     <dependency>
       <groupId>net.minecraftforge</groupId>
       <artifactId>forge</artifactId>
-      <version>1.16.1-32.0.98_mapped_snapshot_20200514-1.16_at_da39a3ee5e6b4b0d3255bfef95601890afd80709</version>
+      <version>1.16.1-32.0.98_mapped_snapshot_20200514-1.16_at_375f5b47cc501f1e7ce8fca2d622f5d6d1586bcf</version>
       <classifier>launcher</classifier>
       <type>jar</type>
       <scope>compile</scope>

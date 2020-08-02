@@ -23,62 +23,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87fcb608-eea8-48e8-959e-908950e59b2a" name="Default Changelist" comment="Added overlays to ores.">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/blockstates/endstone_emerald.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/blockstates/endstone_lapis.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/blockstates/endstone_quartz.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/blockstates/endstone_regular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/blockstates/netherrack_emerald.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/blockstates/netherrack_lapis.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/blockstates/netherrack_quartz.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/blockstates/netherrack_regular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/block/endstone_emerald.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/block/endstone_lapis.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/block/endstone_quartz.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/block/endstone_regular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/block/netherrack_emerald.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/block/netherrack_lapis.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/block/netherrack_quartz.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/block/netherrack_regular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/item/endstone_emerald.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/item/endstone_lapis.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/item/endstone_quartz.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/item/endstone_regular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/item/netherrack_emerald.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/item/netherrack_lapis.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/item/netherrack_quartz.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/item/netherrack_regular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/mixin/core/common/MixinForgeHooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/mixin/core/common/loot/MixinLootTableManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/fullyrandom/loot_tables/blocks/r_ore0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/annotation-processors.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_applyBinpatches_2/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/_applyBinpatches_2/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_applyBinpatches_6/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/_applyBinpatches_6/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_atJar_5/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/_atJar_5/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/fg_cache/net/minecraftforge/forge/1.16.1-32.0.98_mapped_snapshot_20200514-1.16/forge-1.16.1-32.0.98_mapped_snapshot_20200514-1.16-launcher.jar.input" beforeDir="false" afterPath="$PROJECT_DIR$/build/fg_cache/net/minecraftforge/forge/1.16.1-32.0.98_mapped_snapshot_20200514-1.16/forge-1.16.1-32.0.98_mapped_snapshot_20200514-1.16-launcher.jar.input" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/fg_cache/net/minecraftforge/forge/1.16.1-32.0.98_mapped_snapshot_20200514-1.16/forge-1.16.1-32.0.98_mapped_snapshot_20200514-1.16.jar.input" beforeDir="false" afterPath="$PROJECT_DIR$/build/fg_cache/net/minecraftforge/forge/1.16.1-32.0.98_mapped_snapshot_20200514-1.16/forge-1.16.1-32.0.98_mapped_snapshot_20200514-1.16.jar.input" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/fg_cache/net/minecraftforge/forge/1.16.1-32.0.98_mapped_snapshot_20200514-1.16/forge-1.16.1-32.0.98_mapped_snapshot_20200514-1.16.jar.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/build/fg_cache/net/minecraftforge/forge/1.16.1-32.0.98_mapped_snapshot_20200514-1.16/forge-1.16.1-32.0.98_mapped_snapshot_20200514-1.16.jar.sha1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/fg_cache/net/minecraftforge/forge/1.16.1-32.0.98_mapped_snapshot_20200514-1.16/forge-1.16.1-32.0.98_mapped_snapshot_20200514-1.16.pom" beforeDir="false" afterPath="$PROJECT_DIR$/build/fg_cache/net/minecraftforge/forge/1.16.1-32.0.98_mapped_snapshot_20200514-1.16/forge-1.16.1-32.0.98_mapped_snapshot_20200514-1.16.pom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/fg_cache/net/minecraftforge/forge/1.16.1-32.0.98_mapped_snapshot_20200514-1.16/forge-1.16.1-32.0.98_mapped_snapshot_20200514-1.16.pom.input" beforeDir="false" afterPath="$PROJECT_DIR$/build/fg_cache/net/minecraftforge/forge/1.16.1-32.0.98_mapped_snapshot_20200514-1.16/forge-1.16.1-32.0.98_mapped_snapshot_20200514-1.16.pom.input" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/fg_cache/net/minecraftforge/forge/1.16.1-32.0.98_mapped_snapshot_20200514-1.16/forge-1.16.1-32.0.98_mapped_snapshot_20200514-1.16.pom.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/build/fg_cache/net/minecraftforge/forge/1.16.1-32.0.98_mapped_snapshot_20200514-1.16/forge-1.16.1-32.0.98_mapped_snapshot_20200514-1.16.pom.sha1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/accesstransformer.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/META-INF/accesstransformer.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/fullyrandom.mixins.core.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/fullyrandom.mixins.core.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/.mixin.out/audit/mixin_implementation_report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/.mixin.out/audit/mixin_implementation_report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/data/raids.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/level.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/level.dat_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/region/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World (4)/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (4)/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/ColorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/ColorHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/Fullyrandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/Fullyrandom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/Randomizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/Randomizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/RegistryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/RegistryHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/blocks/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/blocks/ModBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/blocks/RandomOre.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/items/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/items/ModItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/mixin/core/client/renderer/model/MixinModelResourceLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/mixin/core/client/renderer/model/MixinModelResourceLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/accesstransformer.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/accesstransformer.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fullyrandom.mixins.core.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fullyrandom.mixins.core.json" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,27 +96,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="FullyRandom" type="f1a62948:ProjectNode" />
                 <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="FullyRandom" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="FullyRandom" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
                 <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="FullyRandom" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -177,8 +142,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -197,9 +162,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/models/item" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
@@ -221,6 +186,18 @@
       <recent name="C:\Users\OverInfrared\Desktop\FullyRandom\src\main\resources\META-INF" />
       <recent name="C:\Users\OverInfrared\Desktop\FullyRandom\src\main\java" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Application.runClient">
     <configuration name="FullyRandom [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -296,7 +273,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -330,12 +307,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
