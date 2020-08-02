@@ -1,6 +1,7 @@
 package over.fullyrandom;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.FallingBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -19,7 +20,9 @@ public class RegistryHandler {
         @SubscribeEvent
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
             ModBlocks.setOreBlocks(MainConfig.oreAmount.get());
-            blockRegistryEvent.getRegistry().registerAll(ModBlocks.oreBlocks);
+            for (Object block: ModBlocks.oreBlocks) {
+                blockRegistryEvent.getRegistry().register((Block) block);
+            }
         }
 
         @SubscribeEvent

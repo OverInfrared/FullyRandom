@@ -34,7 +34,7 @@ import java.util.stream.Collectors;
 @Mod(Fullyrandom.MODID)
 public class Fullyrandom {
 
-    public static IProxy proxy = DistExecutor.runForDist(() -> () -> new ClientProxy(), () -> () -> new ServerProxy());
+    public static IProxy proxy = DistExecutor.safeRunForDist(() -> ClientProxy::new, () -> ServerProxy::new);
 
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MODID = "fullyrandom";
@@ -69,8 +69,8 @@ public class Fullyrandom {
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
-        for (Block block: ModBlocks.oreBlocks) {
-            RenderTypeLookup.setRenderLayer(block, RenderType.getCutoutMipped());
+        for (Object block: ModBlocks.oreBlocks) {
+            RenderTypeLookup.setRenderLayer((Block) block, RenderType.getCutoutMipped());
         }
     }
 

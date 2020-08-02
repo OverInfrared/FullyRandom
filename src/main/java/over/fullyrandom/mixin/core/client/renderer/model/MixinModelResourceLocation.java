@@ -4,10 +4,7 @@ import net.minecraft.client.renderer.model.ModelResourceLocation;
 import net.minecraft.util.ResourceLocation;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
-import org.spongepowered.asm.mixin.Shadow;
-import over.fullyrandom.Fullyrandom;
 import over.fullyrandom.Randomizer;
-import over.fullyrandom.config.MainConfig;
 
 @Mixin(ModelResourceLocation.class)
 public abstract class MixinModelResourceLocation extends ResourceLocation {
@@ -23,17 +20,19 @@ public abstract class MixinModelResourceLocation extends ResourceLocation {
     @Overwrite
     protected static String[] parsePathString(String pathIn) {
 
-        String overlay = Randomizer.blockProperties.getOverlay(index);
         if (pathIn.contains("fullyrandom:r_ore")) {
             if (pathIn.contains("r_ore0"))
                 index = 0;
+            String overlay = Randomizer.blockProperties.getOverlay(index);
+            String texture = Randomizer.blockProperties.material.get(index).name();
             if (!pathIn.contains("inventory")) {
-                pathIn = "fullyrandom:stone_" + overlay.toLowerCase() + "#";
+                pathIn = "fullyrandom:" + texture.toLowerCase() + "_" + overlay.toLowerCase() + "#";
             } else {
-                pathIn = "fullyrandom:stone_" + overlay.toLowerCase() + "#inventory";
+                pathIn = "fullyrandom:" + texture.toLowerCase() + "_" + overlay.toLowerCase() + "#inventory";
             }
             index++;
         }
+
         String[] astring = new String[]{null, pathIn, ""};
         int i = pathIn.indexOf(35);
         String s = pathIn;
@@ -46,7 +45,7 @@ public abstract class MixinModelResourceLocation extends ResourceLocation {
 
         System.arraycopy(ResourceLocation.decompose(s, ':'), 0, astring, 0, 2);
 
-        Fullyrandom.LOGGER.info(pathIn);
+        //Fullyrandom.LOGGER.info(pathIn);
 
         return astring;
     }
