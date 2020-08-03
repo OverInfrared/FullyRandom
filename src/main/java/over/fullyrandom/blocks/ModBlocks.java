@@ -21,9 +21,9 @@ public class ModBlocks {
         for (int i = 0; i < amount; i++) {
             Randomizer.blockProperties.getMaterial(i);
             if (Randomizer.blockProperties.material.get(i).name().equals("SAND") || Randomizer.blockProperties.material.get(i).name().equals("GRAVEL"))
-                oreBlocks.add(new FallingBlock(AbstractBlock.Properties.create(Randomizer.blockProperties.material.get(i).mat).sound(Randomizer.blockProperties.material.get(i).sound).hardnessAndResistance(Randomizer.blockProperties.material.get(i).hardness).harvestTool(Randomizer.blockProperties.material.get(i).tool).harvestLevel(new Random(Randomizer.getSeed(i)).nextInt(2 + 1) + 1)).setRegistryName("fullyrandom:r_ore" + i));
+                oreBlocks.add(new FallingBlock(Block.Properties.create(Randomizer.blockProperties.material.get(i).mat).sound(Randomizer.blockProperties.material.get(i).sound).hardnessAndResistance(Randomizer.blockProperties.material.get(i).hardness).harvestTool(Randomizer.blockProperties.material.get(i).tool).harvestLevel(new Random(Randomizer.getSeed(i)).nextInt(3 + 1) + 2)).setRegistryName("fullyrandom:r_ore" + i));
             else
-                oreBlocks.add(new Block(AbstractBlock.Properties.create(Randomizer.blockProperties.material.get(i).mat).sound(Randomizer.blockProperties.material.get(i).sound).hardnessAndResistance(Randomizer.blockProperties.material.get(i).hardness).harvestTool(Randomizer.blockProperties.material.get(i).tool).harvestLevel(new Random(Randomizer.getSeed(i)).nextInt(2 + 1) + 1)).setRegistryName("fullyrandom:r_ore" + i));
+                oreBlocks.add(new Block(Block.Properties.create(Randomizer.blockProperties.material.get(i).mat).sound(Randomizer.blockProperties.material.get(i).sound).hardnessAndResistance(6).harvestTool(Randomizer.blockProperties.material.get(i).tool).harvestLevel(new Random(Randomizer.getSeed(i)).nextInt(3 + 1) + 2)).setRegistryName("fullyrandom:r_ore" + i));
         }
     }
 

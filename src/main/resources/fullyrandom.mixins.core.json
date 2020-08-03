@@ -6,7 +6,7 @@
   "target": "@env(DEFAULT)",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "common.MixinForgeHooks"
+    "common.loot.MixinLootTableManager"
   ],
   "client": [
     "client.renderer.model.MixinModelResourceLocation"

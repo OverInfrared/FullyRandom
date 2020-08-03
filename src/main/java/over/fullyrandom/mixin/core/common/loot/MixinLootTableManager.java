@@ -1,20 +1,42 @@
 package over.fullyrandom.mixin.core.common.loot;
 
 import com.google.common.collect.ImmutableMap;
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import net.minecraft.client.resources.JsonReloadListener;
 import net.minecraft.loot.*;
 import net.minecraft.profiler.IProfiler;
 import net.minecraft.resources.IResourceManager;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.common.ForgeHooks;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
+import org.spongepowered.asm.mixin.Shadow;
 import over.fullyrandom.Fullyrandom;
+import over.fullyrandom.config.MainConfig;
 
 import java.util.Map;
 
 @Mixin(LootTableManager.class)
-public class MixinLootTableManager {
+public class MixinLootTableManager extends JsonReloadListener {
 
+    private static final Gson GSON_INSTANCE = LootSerializers.func_237388_c_().create();
+    @Shadow private Map<ResourceLocation, LootTable> registeredLootTables;
+    @Shadow private final LootPredicateManager field_227507_d_;
+    private LootTableManager lootTableManager;
+
+    public MixinLootTableManager(Gson p_i51536_1_, String p_i51536_2_, LootPredicateManager field_227507_d_, LootTableManager lootTableManager) {
+        super(p_i51536_1_, p_i51536_2_);
+        this.field_227507_d_ = field_227507_d_;
+        this.lootTableManager = lootTableManager;
+
+    }
+
+    /**
+     * @author OverInfrared
+     */
     @Overwrite
     protected void apply(Map<ResourceLocation, JsonElement> objectIn, IResourceManager resourceManagerIn, IProfiler profilerIn) {
         ImmutableMap.Builder<ResourceLocation, LootTable> builder = ImmutableMap.builder();
@@ -25,10 +47,14 @@ public class MixinLootTableManager {
 
         objectIn.forEach((p_237403_1_, p_237403_2_) -> {
             try (net.minecraft.resources.IResource res = resourceManagerIn.getResource(getPreparedPath(p_237403_1_));){
-                LootTable loottable = net.minecraftforge.common.ForgeHooks.loadLootTable(GSON_INSTANCE, p_237403_1_, p_237403_2_, res == null || !res.getPackName().equals("Default"), this);
-                builder.put(p_237403_1_, loottable);
+                if (!p_237403_1_.toString().contains("fullyrandom")) {
+                    LootTable loottable = net.minecraftforge.common.ForgeHooks.loadLootTable(GSON_INSTANCE, p_237403_1_, p_237403_2_, res == null || !res.getPackName().equals("Default"), lootTableManager);
+                    builder.put(p_237403_1_, loottable);
+                } else {
+                    new over.fullyrandom.json.LootTables(builder, GSON_INSTANCE, res, lootTableManager);
+                }
             } catch (Exception exception) {
-                LOGGER.error("Couldn't parse loot table {}", p_237403_1_, exception);
+                Fullyrandom.LOGGER.error("Couldn't parse loot table {}", p_237403_1_, exception);
             }
 
         });
@@ -36,10 +62,10 @@ public class MixinLootTableManager {
         ImmutableMap<ResourceLocation, LootTable> immutablemap = builder.build();
         ValidationTracker validationtracker = new ValidationTracker(LootParameterSets.GENERIC, this.field_227507_d_::func_227517_a_, immutablemap::get);
         immutablemap.forEach((p_227509_1_, p_227509_2_) -> {
-            func_227508_a_(validationtracker, p_227509_1_, p_227509_2_);
+            LootTableManager.func_227508_a_(validationtracker, p_227509_1_, p_227509_2_);
         });
         validationtracker.getProblems().forEach((p_215303_0_, p_215303_1_) -> {
-            LOGGER.warn("Found validation problem in " + p_215303_0_ + ": " + p_215303_1_);
+            Fullyrandom.LOGGER.warn("Found validation problem in " + p_215303_0_ + ": " + p_215303_1_);
         });
         this.registeredLootTables = immutablemap;
     }

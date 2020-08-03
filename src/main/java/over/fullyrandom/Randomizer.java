@@ -36,6 +36,7 @@ public class Randomizer {
         public static ArrayList<AppearsIn> material = new ArrayList<>();
         public static void getMaterial(int id) {
             Randomizer.blockProperties.AppearsIn[] mat = Randomizer.blockProperties.AppearsIn.values();
+            Fullyrandom.LOGGER.info(mat[new Random(getSeed(id)).nextInt(mat.length)].hardness);
             material.add(mat[new Random(getSeed(id)).nextInt(mat.length)]);
         }
 
@@ -62,6 +63,7 @@ public class Randomizer {
         public static boolean getOreType(int id) {
             return new Random(getSeed(id)).nextBoolean();
         }
+        public static boolean getOreResource(int id) { return new Random(getSeed(id)).nextBoolean(); }
 
     }
 
