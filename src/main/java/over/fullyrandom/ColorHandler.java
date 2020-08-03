@@ -25,6 +25,7 @@ public class ColorHandler {
         for (int i = 0; i < MainConfig.oreAmount.get(); i++ ) {
             int finalI = i;
             event.getItemColors().register((stack, tintIndex) -> Randomizer.blockProperties.getColor(finalI), ModItems.oreItems[i]);
+            event.getItemColors().register((stack, tintIndex) -> Randomizer.blockProperties.getColor(finalI), ModItems.oreDrops[i]);
         }
     }
 

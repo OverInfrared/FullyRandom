@@ -23,60 +23,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87fcb608-eea8-48e8-959e-908950e59b2a" name="Default Changelist" comment="Added basic loottables.&#10;Fixed ore dropping with fist.">
-      <change afterPath="$PROJECT_DIR$/build/fg_cache/mcp/1.16.1-20200625.160719/joined/375f5b47cc501f1e7ce8fca2d622f5d6d1586bcf/AccessTransformer/lastinput.sha1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fg_cache/mcp/1.16.1-20200625.160719/joined/375f5b47cc501f1e7ce8fca2d622f5d6d1586bcf/SideStripper/lastinput.sha1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fg_cache/mcp/1.16.1-20200625.160719/joined/375f5b47cc501f1e7ce8fca2d622f5d6d1586bcf/SideStripper/string_data.sas" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fg_cache/mcp/1.16.1-20200625.160719/joined/375f5b47cc501f1e7ce8fca2d622f5d6d1586bcf/downloadJson/version.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fg_cache/mcp/1.16.1-20200625.160719/joined/375f5b47cc501f1e7ce8fca2d622f5d6d1586bcf/downloadManifest/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fg_cache/mcp/1.16.1-20200625.160719/joined/375f5b47cc501f1e7ce8fca2d622f5d6d1586bcf/listLibraries/libraries.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fg_cache/mcp/1.16.1-20200625.160719/joined/375f5b47cc501f1e7ce8fca2d622f5d6d1586bcf/mcinject/config/access.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fg_cache/mcp/1.16.1-20200625.160719/joined/375f5b47cc501f1e7ce8fca2d622f5d6d1586bcf/mcinject/config/constructors.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fg_cache/mcp/1.16.1-20200625.160719/joined/375f5b47cc501f1e7ce8fca2d622f5d6d1586bcf/mcinject/config/exceptions.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fg_cache/mcp/1.16.1-20200625.160719/joined/375f5b47cc501f1e7ce8fca2d622f5d6d1586bcf/mcinject/lastinput.sha1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fg_cache/mcp/1.16.1-20200625.160719/joined/375f5b47cc501f1e7ce8fca2d622f5d6d1586bcf/merge/lastinput.sha1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fg_cache/mcp/1.16.1-20200625.160719/joined/375f5b47cc501f1e7ce8fca2d622f5d6d1586bcf/rename/config/joined.tsrg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fg_cache/mcp/1.16.1-20200625.160719/joined/375f5b47cc501f1e7ce8fca2d622f5d6d1586bcf/rename/lastinput.sha1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fg_cache/mcp/1.16.1-20200625.160719/joined/375f5b47cc501f1e7ce8fca2d622f5d6d1586bcf/stripClient/lastinput.sha1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fg_cache/mcp/1.16.1-20200625.160719/joined/375f5b47cc501f1e7ce8fca2d622f5d6d1586bcf/stripServer/lastinput.sha1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/annotation-processors.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/FullyRandom.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/FullyRandom.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/FullyRandom.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/FullyRandom.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/_atJar_5/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/_atJar_5/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/createMcpToSrg/output.tsrg" beforeDir="false" afterPath="$PROJECT_DIR$/build/createMcpToSrg/output.tsrg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/createSrgToMcp/output.srg" beforeDir="false" afterPath="$PROJECT_DIR$/build/createSrgToMcp/output.srg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/fg_cache/net/minecraftforge/forge/1.16.1-32.0.98_mapped_snapshot_20200514-1.16/forge-1.16.1-32.0.98_mapped_snapshot_20200514-1.16-recomp.jar.input" beforeDir="false" afterPath="$PROJECT_DIR$/build/fg_cache/net/minecraftforge/forge/1.16.1-32.0.98_mapped_snapshot_20200514-1.16/forge-1.16.1-32.0.98_mapped_snapshot_20200514-1.16-recomp.jar.input" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/fg_cache/net/minecraftforge/forge/1.16.1-32.0.98_mapped_snapshot_20200514-1.16/forge-1.16.1-32.0.98_mapped_snapshot_20200514-1.16-sources.jar.input" beforeDir="false" afterPath="$PROJECT_DIR$/build/fg_cache/net/minecraftforge/forge/1.16.1-32.0.98_mapped_snapshot_20200514-1.16/forge-1.16.1-32.0.98_mapped_snapshot_20200514-1.16-sources.jar.input" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/fullyrandom/textures/block/quartz_fill.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/fullyrandom/textures/block/quartz_fill.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileJava-mappings.tsrg" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileJava-mappings.tsrg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/.mixin.out/audit/mixin_implementation_report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/.mixin.out/audit/mixin_implementation_report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-10.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-2.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-3.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-4.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-5.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-6.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-7.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-8.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-31-9.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/ColorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/ColorHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/Randomizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/Randomizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/RegistryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/RegistryHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/blocks/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/blocks/ModBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/blocks/RandomOre.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/config/MainConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/config/MainConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/items/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/items/ModItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/mixin/core/client/renderer/model/MixinModelResourceLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/mixin/core/client/renderer/model/MixinModelResourceLocation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/mixin/core/common/loot/MixinLootTableManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/mixin/core/common/loot/MixinLootTableManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/over/fullyrandom/setup/ModSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/over/fullyrandom/setup/ModSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/textures/block/quartz_fill.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/fullyrandom/textures/block/quartz_fill.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596322912800</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added basic loottables.&#10;Fixed ore dropping with fist.">
+      <created>1596453863189</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596453863189</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -288,29 +273,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596333452538" />
-    <state x="520" y="89" key="CommitChangelistDialog2" timestamp="1596453728930">
+    <state x="520" y="89" key="CommitChangelistDialog2" timestamp="1596453934803">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="520" y="89" key="CommitChangelistDialog2/0.0.1920.1040/-1680.35.1680.1010@0.0.1920.1040" timestamp="1596453728930" />
-    <state width="1877" height="309" key="GridCell.Tab.0.bottom" timestamp="1596453621207">
+    <state x="520" y="89" key="CommitChangelistDialog2/0.0.1920.1040/-1680.35.1680.1010@0.0.1920.1040" timestamp="1596453934803" />
+    <state width="1877" height="309" key="GridCell.Tab.0.bottom" timestamp="1596484870554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="309" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.35.1680.1010@0.0.1920.1040" timestamp="1596453621207" />
+    <state width="1877" height="309" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.35.1680.1010@0.0.1920.1040" timestamp="1596484870554" />
     <state width="1877" height="286" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596424526679" />
-    <state width="1877" height="309" key="GridCell.Tab.0.center" timestamp="1596453621207">
+    <state width="1877" height="309" key="GridCell.Tab.0.center" timestamp="1596484870554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="309" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.35.1680.1010@0.0.1920.1040" timestamp="1596453621207" />
+    <state width="1877" height="309" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.35.1680.1010@0.0.1920.1040" timestamp="1596484870554" />
     <state width="1877" height="286" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596424526678" />
-    <state width="1877" height="309" key="GridCell.Tab.0.left" timestamp="1596453621207">
+    <state width="1877" height="309" key="GridCell.Tab.0.left" timestamp="1596484870554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="309" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.35.1680.1010@0.0.1920.1040" timestamp="1596453621207" />
+    <state width="1877" height="309" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.35.1680.1010@0.0.1920.1040" timestamp="1596484870554" />
     <state width="1877" height="286" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596424526678" />
-    <state width="1877" height="309" key="GridCell.Tab.0.right" timestamp="1596453621207">
+    <state width="1877" height="309" key="GridCell.Tab.0.right" timestamp="1596484870554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="309" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.35.1680.1010@0.0.1920.1040" timestamp="1596453621207" />
+    <state width="1877" height="309" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.35.1680.1010@0.0.1920.1040" timestamp="1596484870554" />
     <state width="1877" height="286" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596424526678" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1596338203939">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -328,10 +313,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596338203939" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596453705964">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596453937417">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1680.35.1680.1010@0.0.1920.1040" timestamp="1596453705964" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1680.35.1680.1010@0.0.1920.1040" timestamp="1596453937417" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596323145387" />
     <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1596419509839">
       <screen x="0" y="0" width="1920" height="1040" />

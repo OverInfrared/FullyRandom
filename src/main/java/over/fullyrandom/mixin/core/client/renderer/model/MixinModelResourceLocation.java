@@ -20,7 +20,7 @@ public abstract class MixinModelResourceLocation extends ResourceLocation {
     @Overwrite
     protected static String[] parsePathString(String pathIn) {
 
-        if (pathIn.contains("fullyrandom:r_ore")) {
+        if (pathIn.contains("fullyrandom:r_ore") && !pathIn.contains("fullyrandom:r_oredrop")) {
             if (pathIn.contains("r_ore0"))
                 index = 0;
             String overlay = Randomizer.blockProperties.getOverlay(index);

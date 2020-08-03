@@ -29,6 +29,7 @@ public class RegistryHandler {
         public static void onItemRegistry(final RegistryEvent.Register<Item> itemRegistryEvent) {
             ModItems.setOreItems(MainConfig.oreAmount.get());
             itemRegistryEvent.getRegistry().registerAll(ModItems.oreItems);
+            itemRegistryEvent.getRegistry().registerAll(ModItems.oreDrops);
         }
 
     }

@@ -37,7 +37,6 @@ public class Randomizer {
         public static ArrayList<AppearsIn> material = new ArrayList<>();
         public static void getMaterial(int id) {
             Randomizer.blockProperties.AppearsIn[] mat = Randomizer.blockProperties.AppearsIn.values();
-            Fullyrandom.LOGGER.info(mat[new Random(getSeed(id)).nextInt(mat.length)].hardness);
             material.add(mat[new Random(getSeed(id)).nextInt(mat.length)]);
         }
 

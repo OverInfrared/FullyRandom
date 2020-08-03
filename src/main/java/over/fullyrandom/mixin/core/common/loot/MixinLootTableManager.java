@@ -33,6 +33,7 @@ public class MixinLootTableManager extends JsonReloadListener {
 
     }
 
+
     /**
      * @author OverInfrared
      */
@@ -47,6 +48,7 @@ public class MixinLootTableManager extends JsonReloadListener {
 
         objectIn.forEach((p_237403_1_, p_237403_2_) -> {
             try (net.minecraft.resources.IResource res = resourceManagerIn.getResource(getPreparedPath(p_237403_1_));){
+
                 if (!p_237403_1_.toString().contains("fullyrandom")) {
                     LootTable loottable = net.minecraftforge.common.ForgeHooks.loadLootTable(GSON_INSTANCE, p_237403_1_, p_237403_2_, res == null || !res.getPackName().equals("Default"), lootTableManager);
                     builder.put(p_237403_1_, loottable);
