@@ -23,7 +23,7 @@ fov:0.475
 gamma:0.5528169274330139
 renderDistance:2
 entityDistanceScaling:1.0
-guiScale:2
+guiScale:3
 particles:0
 maxFps:260
 difficulty:2

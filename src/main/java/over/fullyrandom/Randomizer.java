@@ -69,6 +69,36 @@ public class Randomizer {
         }
         public static boolean getOreResource(int id) { return new Random(getSeed(id)).nextBoolean(); }
 
+        public static DropAppearance getDrop(int id) {
+            DropAppearance drop[] = DropAppearance.values();
+            if (getOreType(id)) {
+                return DropAppearance.INGOT;
+            } else {
+                return drop[new Random(getSeed(id)).nextInt(drop.length - 1)];
+            }
+        }
+
+        public enum DropAppearance {
+            COAL( ""),
+            DIAMOND( ""),
+            EMERALD( ""),
+            FLINT( ""),
+            GHAST_TEAR( ""),
+            LAPIS( ""),
+            PHANTOM( " Membrane"),
+            PRISMARINE_CRYSTAL( " Crystal"),
+            QUARTZ( ""),
+            REDSTONE( " Dust"),
+            RUBY( ""),
+            SLIME_BALL( ""),
+            STRING( "Fiber"),
+            INGOT(" Ingot");
+
+            public final String title;
+
+            DropAppearance(String title) { this.title = title; }
+        }
+
     }
 
 }

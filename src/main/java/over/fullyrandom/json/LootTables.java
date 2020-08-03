@@ -109,7 +109,7 @@ public class LootTables {
 
                     sub6.addProperty("type", "minecraft:item");
                     sub6.add("functions", functions);
-                    sub6.addProperty("name", "fullyrandom:r_ore" + ore);
+                    sub6.addProperty("name", "fullyrandom:r_oredrop" + ore);
                     children.add(sub6);
 
                     sub2.addProperty("type", "minecraft:alternatives");
@@ -169,7 +169,7 @@ public class LootTables {
 
                     sub6.addProperty("type", "minecraft:item");
                     sub6.add("functions", functions);
-                    sub6.addProperty("name", "fullyrandom:r_ore" + ore);
+                    sub6.addProperty("name", "fullyrandom:r_oredrop" + ore);
                     children.add(sub6);
 
                     sub2.addProperty("type", "minecraft:alternatives");

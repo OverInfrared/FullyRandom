@@ -4,6 +4,7 @@ import net.minecraft.client.renderer.model.ModelResourceLocation;
 import net.minecraft.util.ResourceLocation;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
+import over.fullyrandom.Fullyrandom;
 import over.fullyrandom.Randomizer;
 
 @Mixin(ModelResourceLocation.class)
@@ -13,25 +14,13 @@ public abstract class MixinModelResourceLocation extends ResourceLocation {
         super(resourceParts);
     }
 
-    private static int index = 0;
     /**
      * @author OverInfrared
      */
     @Overwrite
     protected static String[] parsePathString(String pathIn) {
 
-        if (pathIn.contains("fullyrandom:r_ore") && !pathIn.contains("fullyrandom:r_oredrop")) {
-            if (pathIn.contains("r_ore0"))
-                index = 0;
-            String overlay = Randomizer.blockProperties.getOverlay(index);
-            String texture = Randomizer.blockProperties.material.get(index).name();
-            if (!pathIn.contains("inventory")) {
-                pathIn = "fullyrandom:" + texture.toLowerCase() + "_" + overlay.toLowerCase() + "#";
-            } else {
-                pathIn = "fullyrandom:" + texture.toLowerCase() + "_" + overlay.toLowerCase() + "#inventory";
-            }
-            index++;
-        }
+        pathIn = createPath(pathIn);
 
         String[] astring = new String[]{null, pathIn, ""};
         int i = pathIn.indexOf(35);
@@ -48,6 +37,38 @@ public abstract class MixinModelResourceLocation extends ResourceLocation {
         //Fullyrandom.LOGGER.info(pathIn);
 
         return astring;
+    }
+
+    private static String createPath(String pathIn) {
+
+        if (pathIn.contains("fullyrandom:r_")) {
+
+            String temppath = pathIn;
+
+            int value = Integer.parseInt(pathIn.replaceAll("[^0-9]", ""));
+            pathIn = pathIn.replaceAll("[^a-z]", "");
+            String inventory = "#";
+            if (pathIn.contains("inventory")) {
+                inventory = "#inventory";
+                pathIn = pathIn.replace("inventory", "");
+            }
+
+            if (pathIn.equals("fullyrandomrore")) {
+                String overlay = Randomizer.blockProperties.getOverlay(value);
+                String texture = Randomizer.blockProperties.material.get(value).name();
+                pathIn = "fullyrandom:" + texture.toLowerCase() + "_" + overlay.toLowerCase() + inventory;
+                return pathIn;
+            } else if (pathIn.equals("fullyrandomroredrop")) {
+                String texture = Randomizer.blockProperties.getDrop(value).name().toLowerCase();
+                pathIn = "fullyrandom:" + texture + inventory;
+                return pathIn;
+            }
+
+        } else {
+            return pathIn;
+        }
+        return pathIn;
+
     }
 
 }
