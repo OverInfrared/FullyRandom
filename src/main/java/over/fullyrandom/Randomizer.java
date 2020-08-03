@@ -1,5 +1,6 @@
 package over.fullyrandom;
 
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.common.ToolType;
@@ -10,8 +11,8 @@ import java.util.Random;
 
 public class Randomizer {
 
-    public static int getSeed(int id) {
-        return new Random(new Random(MainConfig.seed.get()).nextInt(Math.abs(new Random(id).nextInt())) * new Random(id).nextInt()).nextInt();
+    public static long getSeed(long id) {
+        return new Random(new Random(MainConfig.seed.get()).nextInt(Math.abs(new Random(id).nextInt())) * new Random(id).nextLong()).nextLong();
     }
 
     public static class blockProperties {
@@ -40,12 +41,16 @@ public class Randomizer {
             material.add(mat[new Random(getSeed(id)).nextInt(mat.length)]);
         }
 
+        public static AbstractBlock.Properties getProperties(int id) {
+            return AbstractBlock.Properties.create(material.get(id).mat).sound(material.get(id).sound).hardnessAndResistance(material.get(id).hardness).harvestTool(material.get(id).tool).harvestLevel(new Random(getSeed(id)).nextInt(3 + 1)).setRequiresTool();
+        }
+
         public enum AppearsIn {
             STONE(Material.ROCK, SoundType.STONE, 2.0f, ToolType.PICKAXE),
             GRAVEL(Material.EARTH, SoundType.GROUND, 0.5f, ToolType.SHOVEL),
             ENDSTONE(Material.ROCK, SoundType.STONE, 3.0f, ToolType.PICKAXE),
             SAND(Material.SAND, SoundType.SAND, 0.5f, ToolType.SHOVEL),
-            NETHERRACK(Material.ROCK, SoundType.STONE, 0.4f, ToolType.PICKAXE);
+            NETHERRACK(Material.ROCK, SoundType.NETHER_ORE, 0.4f, ToolType.PICKAXE);
 
             public final Material mat;
             public final SoundType sound;

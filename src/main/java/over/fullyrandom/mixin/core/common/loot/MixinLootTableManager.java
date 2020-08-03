@@ -11,12 +11,11 @@ import net.minecraft.profiler.IProfiler;
 import net.minecraft.resources.IResourceManager;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.ForgeHooks;
-import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Overwrite;
-import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.*;
 import over.fullyrandom.Fullyrandom;
 import over.fullyrandom.config.MainConfig;
 
+import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.Map;
 
 @Mixin(LootTableManager.class)
@@ -24,12 +23,12 @@ public class MixinLootTableManager extends JsonReloadListener {
 
     private static final Gson GSON_INSTANCE = LootSerializers.func_237388_c_().create();
     @Shadow private Map<ResourceLocation, LootTable> registeredLootTables;
-    @Shadow private final LootPredicateManager field_227507_d_;
-    private LootTableManager lootTableManager;
+    @Shadow @Final @Mutable private final LootPredicateManager lootPredicateManager;
+    private final LootTableManager lootTableManager;
 
     public MixinLootTableManager(Gson p_i51536_1_, String p_i51536_2_, LootPredicateManager field_227507_d_, LootTableManager lootTableManager) {
         super(p_i51536_1_, p_i51536_2_);
-        this.field_227507_d_ = field_227507_d_;
+        this.lootPredicateManager = field_227507_d_;
         this.lootTableManager = lootTableManager;
 
     }
@@ -37,6 +36,7 @@ public class MixinLootTableManager extends JsonReloadListener {
     /**
      * @author OverInfrared
      */
+    @ParametersAreNonnullByDefault
     @Overwrite
     protected void apply(Map<ResourceLocation, JsonElement> objectIn, IResourceManager resourceManagerIn, IProfiler profilerIn) {
         ImmutableMap.Builder<ResourceLocation, LootTable> builder = ImmutableMap.builder();
@@ -60,7 +60,7 @@ public class MixinLootTableManager extends JsonReloadListener {
         });
         builder.put(LootTables.EMPTY, LootTable.EMPTY_LOOT_TABLE);
         ImmutableMap<ResourceLocation, LootTable> immutablemap = builder.build();
-        ValidationTracker validationtracker = new ValidationTracker(LootParameterSets.GENERIC, this.field_227507_d_::func_227517_a_, immutablemap::get);
+        ValidationTracker validationtracker = new ValidationTracker(LootParameterSets.GENERIC, this.lootPredicateManager::func_227517_a_, immutablemap::get);
         immutablemap.forEach((p_227509_1_, p_227509_2_) -> {
             LootTableManager.func_227508_a_(validationtracker, p_227509_1_, p_227509_2_);
         });

@@ -26,7 +26,8 @@ hs_err_pid*
 /run/.mixin.out/
 /run/config/
 /run/defaultconfigs/
-/run/logs/
+/run/logs/*
+/run/logs/*
 /run/mods/
 /run/resourcepacks/
 /run/saves/
