@@ -31,7 +31,8 @@ public class Randomizer {
             REGULAR,
             EMERALD,
             LAPIS,
-            QUARTZ
+            QUARTZ,
+            GOLD
         }
 
         public static ArrayList<AppearsIn> material = new ArrayList<>();

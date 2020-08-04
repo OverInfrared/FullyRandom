@@ -6,6 +6,7 @@
   "target": "@env(DEFAULT)",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "common.item.crafting.MixinRecipeManager",
     "common.loot.MixinLootTableManager"
   ],
   "client": [

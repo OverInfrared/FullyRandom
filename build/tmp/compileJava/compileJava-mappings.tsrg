@@ -1,4 +1,7 @@
+over/fullyrandom/mixin/core/common/item/crafting/MixinRecipeManager recipes field_199522_d
+over/fullyrandom/mixin/core/common/item/crafting/MixinRecipeManager someRecipesErrored field_199523_e
 over/fullyrandom/mixin/core/common/loot/MixinLootTableManager registeredLootTables field_186527_c
 over/fullyrandom/mixin/core/common/loot/MixinLootTableManager lootPredicateManager field_227507_d_
 over/fullyrandom/mixin/core/client/renderer/model/MixinModelResourceLocation parsePathString (Ljava/lang/String;)[Ljava/lang/String; func_177517_b
+over/fullyrandom/mixin/core/common/item/crafting/MixinRecipeManager apply (Ljava/util/Map;Lnet/minecraft/resources/IResourceManager;Lnet/minecraft/profiler/IProfiler;)V func_212853_a_
 over/fullyrandom/mixin/core/common/loot/MixinLootTableManager apply (Ljava/util/Map;Lnet/minecraft/resources/IResourceManager;Lnet/minecraft/profiler/IProfiler;)V func_212853_a_

@@ -43,8 +43,6 @@ public abstract class MixinModelResourceLocation extends ResourceLocation {
 
         if (pathIn.contains("fullyrandom:r_")) {
 
-            String temppath = pathIn;
-
             int value = Integer.parseInt(pathIn.replaceAll("[^0-9]", ""));
             pathIn = pathIn.replaceAll("[^a-z]", "");
             String inventory = "#";
