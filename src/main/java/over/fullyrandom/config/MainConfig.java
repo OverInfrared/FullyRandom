@@ -17,6 +17,6 @@ public class MainConfig {
 
         oreAmount = server
                 .comment("Ore amount for game, change this for amount of random ore you want")
-                .defineInRange("main.oreamount", 1, 0, Integer.MAX_VALUE / 2);
+                .defineInRange("main.oreamount", 1, 1, Integer.MAX_VALUE / 2);
     }
 }
