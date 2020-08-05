@@ -26,6 +26,13 @@ public class ColorHandler {
             int finalI = i;
             event.getItemColors().register((stack, tintIndex) -> Randomizer.blockProperties.getColor(finalI), ModItems.oreItems[i]);
             event.getItemColors().register((stack, tintIndex) -> Randomizer.blockProperties.getColor(finalI), ModItems.oreDrops[i]);
+            if (Randomizer.blockProperties.getTools(i)) {
+                event.getItemColors().register((stack, tintIndex) -> { if (tintIndex == 1) { return Randomizer.blockProperties.getColor(finalI); } else { return 0xFFffffff; } } , ModItems.swords.get(i));
+                event.getItemColors().register((stack, tintIndex) -> { if (tintIndex == 1) { return Randomizer.blockProperties.getColor(finalI); } else { return 0xFFffffff; } } , ModItems.pickaxes.get(i));
+                event.getItemColors().register((stack, tintIndex) -> { if (tintIndex == 1) { return Randomizer.blockProperties.getColor(finalI); } else { return 0xFFffffff; } } , ModItems.shovels.get(i));
+                event.getItemColors().register((stack, tintIndex) -> { if (tintIndex == 1) { return Randomizer.blockProperties.getColor(finalI); } else { return 0xFFffffff; } } , ModItems.axes.get(i));
+                event.getItemColors().register((stack, tintIndex) -> { if (tintIndex == 1) { return Randomizer.blockProperties.getColor(finalI); } else { return 0xFFffffff; } } , ModItems.hoes.get(i));
+            }
         }
     }
 

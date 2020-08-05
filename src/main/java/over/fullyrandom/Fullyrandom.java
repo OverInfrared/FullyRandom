@@ -12,10 +12,7 @@ import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
-import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
+import net.minecraftforge.fml.event.lifecycle.*;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
@@ -27,6 +24,7 @@ import over.fullyrandom.setup.ClientProxy;
 import over.fullyrandom.setup.IProxy;
 import over.fullyrandom.setup.ModSetup;
 import over.fullyrandom.setup.ServerProxy;
+import over.fullyrandom.world.OreGeneration;
 
 import java.util.stream.Collectors;
 
@@ -54,6 +52,7 @@ public class Fullyrandom {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
         // Register the doClientStuff method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::done);
 
         Config.loadConfig(Config.server_config, FMLPaths.CONFIGDIR.get().resolve("fullyrandom-server.toml").toString());
         Config.loadConfig(Config.client_config, FMLPaths.CONFIGDIR.get().resolve("fullyrandom-client.toml").toString());
@@ -65,13 +64,10 @@ public class Fullyrandom {
     private void setup(final FMLCommonSetupEvent event) {
         setup.init();
         proxy.init();
-
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
-        for (Object block: ModBlocks.oreBlocks) {
-            RenderTypeLookup.setRenderLayer((Block) block, RenderType.getCutoutMipped());
-        }
+        for (Object block: ModBlocks.oreBlocks) { RenderTypeLookup.setRenderLayer((Block) block, RenderType.getCutoutMipped()); }
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event) {
@@ -80,6 +76,11 @@ public class Fullyrandom {
 
     private void processIMC(final InterModProcessEvent event) {
 
+    }
+
+    private void done(final FMLLoadCompleteEvent event) {
+        OreGeneration.removeVanillaOre();
+        OreGeneration.generateOre();
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

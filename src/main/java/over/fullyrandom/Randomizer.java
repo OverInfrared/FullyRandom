@@ -3,8 +3,11 @@ package over.fullyrandom;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.world.gen.placement.CountRangeConfig;
 import net.minecraftforge.common.ToolType;
 import over.fullyrandom.config.MainConfig;
+import over.fullyrandom.items.ModItems;
+import over.fullyrandom.items.RandomToolTier;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -24,7 +27,7 @@ public class Randomizer {
         // Overlays
         public static String getOverlay(int id) {
             Overlay[] overlays = Overlay.values();
-            return overlays[new Random(getSeed(id)).nextInt(overlays.length)].toString();
+            return overlays[new Random(getSeed(getSeed(id))).nextInt(overlays.length)].toString();
         }
 
         private enum Overlay {
@@ -68,7 +71,7 @@ public class Randomizer {
         public static boolean getOreType(int id) {
             return new Random(getSeed(id)).nextBoolean();
         }
-        public static boolean getOreResource(int id) { return new Random(getSeed(id)).nextBoolean(); }
+        public static boolean getOreResource(int id) { return new Random(getSeed(getSeed(id))).nextBoolean(); }
 
         public static DropAppearance getDrop(int id) {
             DropAppearance drop[] = DropAppearance.values();
@@ -92,12 +95,54 @@ public class Randomizer {
             REDSTONE( " Dust"),
             RUBY( ""),
             SLIME_BALL( ""),
-            STRING( "Fiber"),
+            STRING( " Fiber"),
             INGOT(" Ingot");
 
             public final String title;
 
             DropAppearance(String title) { this.title = title; }
+        }
+
+        public static int getOreSpawn(int id) {
+            return new Random(getSeed(id)).nextInt(15 + 1) + 1;
+        }
+
+        public static CountRangeConfig getSpawnPos(int index) {
+            int max = 0;
+            if (material.get(index).name().equals("STONE")) {
+                max = new Random(getSeed(index)).nextInt(120 + 1) + 1;
+            } else if (material.get(index).name().equals("GRAVEL")) {
+                max = new Random(getSeed(index)).nextInt(126 + 1) + 1;
+            } else if (material.get(index).name().equals("ENDSTONE")) {
+                max = new Random(getSeed(index)).nextInt((70 - 10) + 1) + 10;
+            } else if (material.get(index).name().equals("SAND")) {
+                max = new Random(getSeed(index)).nextInt((110 - 60) + 1) + 60;
+            } else if (material.get(index).name().equals("NETHERRACK")) {
+                max = new Random(getSeed(index)).nextInt(128 + 1) + 1;
+            }
+            return new CountRangeConfig(new Random(getSeed(index)).nextInt(13 - 1) + 1, new Random(getSeed(index)).nextInt(30), 0, max);
+        }
+
+        public static boolean getTools(int index) {
+            if (getOreType(index)) {
+                return true;
+            } else {
+                return new Random(getSeed(getSeed(getSeed(index)))).nextBoolean();
+            }
+        }
+
+        public static RandomToolTier getToolTier(int index, float mult) {
+            float attackDamage;
+            if (mult == 0) {
+                attackDamage = 1;
+            } else {
+                attackDamage = (new Random(getSeed(index)).nextInt(9 + 1) + 1) * mult;
+            }
+            float efficiency = new Random(getSeed(index)).nextInt(14 + 1) + 1;
+            int durability = new Random(getSeed(index)).nextInt(2018*2 + 1) + 1;
+            int harvestLevel = new Random(getSeed(index)).nextInt(2 + 1) + 1;
+            int enchantability = new Random(getSeed(index)).nextInt(25 + 1) + 1;
+            return new RandomToolTier(attackDamage, efficiency, durability, harvestLevel, enchantability, ModItems.oreDrops[index]);
         }
 
     }

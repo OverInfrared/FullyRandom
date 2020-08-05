@@ -1,10 +1,7 @@
 package over.fullyrandom;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.FallingBlock;
-import net.minecraft.block.material.Material;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -30,6 +27,11 @@ public class RegistryHandler {
             ModItems.setOreItems(MainConfig.oreAmount.get());
             itemRegistryEvent.getRegistry().registerAll(ModItems.oreItems);
             itemRegistryEvent.getRegistry().registerAll(ModItems.oreDrops);
+            ModItems.swords.forEach(item -> { if (item != null) itemRegistryEvent.getRegistry().register(item); });
+            ModItems.pickaxes.forEach(item -> { if (item != null) itemRegistryEvent.getRegistry().register(item); });
+            ModItems.shovels.forEach(item -> { if (item != null) itemRegistryEvent.getRegistry().register(item); });
+            ModItems.axes.forEach(item -> { if (item != null) itemRegistryEvent.getRegistry().register(item); });
+            ModItems.hoes.forEach(item -> { if (item != null) itemRegistryEvent.getRegistry().register(item); });
         }
 
     }

@@ -6,11 +6,12 @@
   "target": "@env(DEFAULT)",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "client.resources.MixinClientLanguageMap",
     "common.item.crafting.MixinRecipeManager",
-    "common.loot.MixinLootTableManager"
+    "common.loot.MixinLootTableManager",
+    "common.util.text.MixinLanguageMap"
   ],
   "client": [
+    "client.renderer.entity.layers.MixinBipedArmorLayer",
     "client.renderer.model.MixinModelResourceLocation"
   ]
 }

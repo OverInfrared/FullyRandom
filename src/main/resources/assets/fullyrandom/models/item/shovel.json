@@ -1,0 +1,7 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "fullyrandom:item/shovel_handle",
+    "layer1": "fullyrandom:item/shovel_head"
+  }
+}

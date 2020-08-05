@@ -1,0 +1,7 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "fullyrandom:item/axe_handle",
+    "layer1": "fullyrandom:item/axe_head"
+  }
+}

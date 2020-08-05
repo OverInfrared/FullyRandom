@@ -25,11 +25,11 @@ public class Config {
     }
 
     public static void loadConfig(ForgeConfigSpec config, String path) {
-        Fullyrandom.LOGGER.info("Loading config: " + path);
+        Fullyrandom.LOGGER.debug("Loading config: " + path);
         final CommentedFileConfig file = CommentedFileConfig.builder(new File(path)).sync().autosave().writingMode(WritingMode.REPLACE).build();
-        Fullyrandom.LOGGER.info("Built config: " + path);
+        Fullyrandom.LOGGER.debug("Built config: " + path);
         file.load();
-        Fullyrandom.LOGGER.info("Loaded config: " + path);
+        Fullyrandom.LOGGER.debug("Loaded config: " + path);
         config.setConfig(file);
     }
 

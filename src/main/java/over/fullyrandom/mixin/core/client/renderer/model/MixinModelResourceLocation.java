@@ -4,11 +4,14 @@ import net.minecraft.client.renderer.model.ModelResourceLocation;
 import net.minecraft.util.ResourceLocation;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
+import org.spongepowered.asm.mixin.Shadow;
 import over.fullyrandom.Fullyrandom;
 import over.fullyrandom.Randomizer;
 
 @Mixin(ModelResourceLocation.class)
 public abstract class MixinModelResourceLocation extends ResourceLocation {
+
+    @Shadow public abstract boolean equals(Object p_equals_1_);
 
     protected MixinModelResourceLocation(String[] resourceParts) {
         super(resourceParts);
@@ -60,7 +63,9 @@ public abstract class MixinModelResourceLocation extends ResourceLocation {
                 String texture = Randomizer.blockProperties.getDrop(value).name().toLowerCase();
                 pathIn = "fullyrandom:" + texture + inventory;
                 return pathIn;
-            }
+            } 
+
+            pathIn = createToolPath(pathIn);
 
         } else {
             return pathIn;
@@ -69,4 +74,23 @@ public abstract class MixinModelResourceLocation extends ResourceLocation {
 
     }
 
+    private static String createToolPath(String pathIn) {
+
+        if (pathIn.equals("fullyrandomrsword")) {
+            return pathIn = "fullyrandom:sword#inventory";
+        } else if (pathIn.equals("fullyrandomrpickaxe")) {
+            return pathIn = "fullyrandom:pickaxe#inventory";
+        } else if (pathIn.equals("fullyrandomrshovel")) {
+            return pathIn = "fullyrandom:shovel#inventory";
+        } else if (pathIn.equals("fullyrandomraxe")) {
+            return pathIn = "fullyrandom:axe#inventory";
+        } else if (pathIn.equals("fullyrandomrhoe")) {
+            return pathIn = "fullyrandom:hoe#inventory";
+        }
+
+        return pathIn;
+
+    }
+
 }
+

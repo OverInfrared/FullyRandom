@@ -1,0 +1,7 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "fullyrandom:item/sword_handle",
+    "layer1": "fullyrandom:item/sword_head"
+  }
+}
