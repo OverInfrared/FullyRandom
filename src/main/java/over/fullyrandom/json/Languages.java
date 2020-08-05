@@ -38,6 +38,10 @@ public class Languages {
             languageFile.addProperty("item.fullyrandom.r_shovel" + index, name + " Shovel");
             languageFile.addProperty("item.fullyrandom.r_axe" + index, name + " Axe");
             languageFile.addProperty("item.fullyrandom.r_hoe" + index, name + " Hoe");
+            languageFile.addProperty("item.fullyrandom.r_helmet" + index, name + " Helmet");
+            languageFile.addProperty("item.fullyrandom.r_chestplate" + index, name + " Chestplate");
+            languageFile.addProperty("item.fullyrandom.r_leggings" + index, name + " Leggings");
+            languageFile.addProperty("item.fullyrandom.r_boots" + index, name + " Boots");
         }
 
         private static String consonants = "bcdfghjklmnpqrstvwxyz";
@@ -46,9 +50,9 @@ public class Languages {
 
         private static String getOreName(int index) {
 
-            Random random0 = new Random(Randomizer.getSeed(index));
-            Random random1 = new Random(Randomizer.getSeed(Randomizer.getSeed(index)));
-            Random random2 = new Random(Randomizer.getSeed(Randomizer.getSeed(Randomizer.getSeed(index))));
+            Random random0 = new Random(Randomizer.getSeed(index, 1));
+            Random random1 = new Random(Randomizer.getSeed(index, 2));
+            Random random2 = new Random(Randomizer.getSeed(index, 3));
 
             int letter0 = random0.nextInt(consonants.length());
             int letter1 = random1.nextInt(consonants.length());

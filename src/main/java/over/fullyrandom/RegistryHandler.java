@@ -32,6 +32,10 @@ public class RegistryHandler {
             ModItems.shovels.forEach(item -> { if (item != null) itemRegistryEvent.getRegistry().register(item); });
             ModItems.axes.forEach(item -> { if (item != null) itemRegistryEvent.getRegistry().register(item); });
             ModItems.hoes.forEach(item -> { if (item != null) itemRegistryEvent.getRegistry().register(item); });
+            ModItems.helmets.forEach(item -> { if (item != null) itemRegistryEvent.getRegistry().register(item); });
+            ModItems.chestplates.forEach(item -> { if (item != null) itemRegistryEvent.getRegistry().register(item); });
+            ModItems.leggings.forEach(item -> { if (item != null) itemRegistryEvent.getRegistry().register(item); });
+            ModItems.boots.forEach(item -> { if (item != null) itemRegistryEvent.getRegistry().register(item); });
         }
 
     }

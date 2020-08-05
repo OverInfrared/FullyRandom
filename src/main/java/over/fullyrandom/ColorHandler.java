@@ -32,6 +32,13 @@ public class ColorHandler {
                 event.getItemColors().register((stack, tintIndex) -> { if (tintIndex == 1) { return Randomizer.blockProperties.getColor(finalI); } else { return 0xFFffffff; } } , ModItems.shovels.get(i));
                 event.getItemColors().register((stack, tintIndex) -> { if (tintIndex == 1) { return Randomizer.blockProperties.getColor(finalI); } else { return 0xFFffffff; } } , ModItems.axes.get(i));
                 event.getItemColors().register((stack, tintIndex) -> { if (tintIndex == 1) { return Randomizer.blockProperties.getColor(finalI); } else { return 0xFFffffff; } } , ModItems.hoes.get(i));
+
+            }
+            if (Randomizer.blockProperties.getArmor(i)) {
+                event.getItemColors().register((stack, tintIndex) -> { if (tintIndex == 0) { return Randomizer.blockProperties.getColor(finalI); } else { return 0xFFffffff; } } , ModItems.helmets.get(i));
+                event.getItemColors().register((stack, tintIndex) -> { if (tintIndex == 0) { return Randomizer.blockProperties.getColor(finalI); } else { return 0xFFffffff; } } , ModItems.chestplates.get(i));
+                event.getItemColors().register((stack, tintIndex) -> { if (tintIndex == 0) { return Randomizer.blockProperties.getColor(finalI); } else { return 0xFFffffff; } } , ModItems.leggings.get(i));
+                event.getItemColors().register((stack, tintIndex) -> { if (tintIndex == 0) { return Randomizer.blockProperties.getColor(finalI); } else { return 0xFFffffff; } } , ModItems.boots.get(i));
             }
         }
     }

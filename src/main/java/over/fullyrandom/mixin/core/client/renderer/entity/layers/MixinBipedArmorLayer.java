@@ -38,11 +38,19 @@ public class MixinBipedArmorLayer {
         s1 = net.minecraftforge.client.ForgeHooksClient.getArmorTexture(entity, stack, s1, slot, type);
         ResourceLocation resourcelocation = ARMOR_TEXTURE_RES_MAP.get(s1);
 
-        Fullyrandom.LOGGER.info(resourcelocation);
-
         if (resourcelocation == null) {
             resourcelocation = new ResourceLocation(s1);
-            Fullyrandom.LOGGER.info(resourcelocation);
+            if (resourcelocation.toString().contains("fullyrandom")) {
+                if (resourcelocation.toString().contains("layer_1.png")) {
+                    resourcelocation = new ResourceLocation("fullyrandom:textures/models/armor/armor_layer_1.png");
+                } else if (resourcelocation.toString().contains("layer_2.png")) {
+                    resourcelocation = new ResourceLocation("fullyrandom:textures/models/armor/armor_layer_2.png");
+                } else if (resourcelocation.toString().contains("layer_1_overlay")) {
+                    resourcelocation = new ResourceLocation("fullyrandom:textures/models/armor/armor_layer_1_overlay.png");
+                } else if (resourcelocation.toString().contains("layer_2_overlay")) {
+                    resourcelocation = new ResourceLocation("fullyrandom:textures/models/armor/armor_layer_2_overlay.png");
+                }
+            }
             ARMOR_TEXTURE_RES_MAP.put(s1, resourcelocation);
         }
 

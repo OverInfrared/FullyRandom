@@ -66,6 +66,7 @@ public abstract class MixinModelResourceLocation extends ResourceLocation {
             } 
 
             pathIn = createToolPath(pathIn);
+            pathIn = createArmorPath(pathIn);
 
         } else {
             return pathIn;
@@ -75,21 +76,33 @@ public abstract class MixinModelResourceLocation extends ResourceLocation {
     }
 
     private static String createToolPath(String pathIn) {
-
-        if (pathIn.equals("fullyrandomrsword")) {
-            return pathIn = "fullyrandom:sword#inventory";
-        } else if (pathIn.equals("fullyrandomrpickaxe")) {
-            return pathIn = "fullyrandom:pickaxe#inventory";
-        } else if (pathIn.equals("fullyrandomrshovel")) {
-            return pathIn = "fullyrandom:shovel#inventory";
-        } else if (pathIn.equals("fullyrandomraxe")) {
-            return pathIn = "fullyrandom:axe#inventory";
-        } else if (pathIn.equals("fullyrandomrhoe")) {
-            return pathIn = "fullyrandom:hoe#inventory";
+        switch (pathIn) {
+            case "fullyrandomrsword":
+                return "fullyrandom:sword#inventory";
+            case "fullyrandomrpickaxe":
+                return "fullyrandom:pickaxe#inventory";
+            case "fullyrandomrshovel":
+                return "fullyrandom:shovel#inventory";
+            case "fullyrandomraxe":
+                return "fullyrandom:axe#inventory";
+            case "fullyrandomrhoe":
+                return "fullyrandom:hoe#inventory";
         }
-
         return pathIn;
+    }
 
+    private static String createArmorPath(String pathIn) {
+        switch (pathIn) {
+            case "fullyrandomrhelmet":
+                return "fullyrandom:helmet#inventory";
+            case "fullyrandomrchestplate":
+                return "fullyrandom:chestplate#inventory";
+            case "fullyrandomrleggings":
+                return "fullyrandom:leggings#inventory";
+            case "fullyrandomrboots":
+                return "fullyrandom:boots#inventory";
+        }
+        return pathIn;
     }
 
 }

@@ -1,6 +1,7 @@
 package over.fullyrandom.items;
 
 import net.minecraft.block.Block;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import over.fullyrandom.Fullyrandom;
 import over.fullyrandom.Randomizer;
@@ -18,6 +19,10 @@ public class ModItems {
     public static ArrayList<Item> shovels = new ArrayList<>();
     public static ArrayList<Item> axes = new ArrayList<>();
     public static ArrayList<Item> hoes = new ArrayList<>();
+    public static ArrayList<Item> helmets = new ArrayList<>();
+    public static ArrayList<Item> chestplates = new ArrayList<>();
+    public static ArrayList<Item> leggings = new ArrayList<>();
+    public static ArrayList<Item> boots = new ArrayList<>();
 
     public static void setOreItems(int amount) {
         for (int i = 0; i < amount; i++) {
@@ -31,6 +36,14 @@ public class ModItems {
                 hoes.add(new HoeItem(Randomizer.blockProperties.getToolTier(i, 0), 0, 0, new Item.Properties().group(Fullyrandom.setup.itemGroup)).setRegistryName("r_hoe" + i));
             } else {
                 pickaxes.add(null); swords.add(null); shovels.add(null); axes.add(null); hoes.add(null);
+            }
+            if (Randomizer.blockProperties.getArmor(i)) {
+                helmets.add(new RandomArmorItem(Randomizer.blockProperties.getArmorTier(i, (float) (363.0/528.0), (float) (3.0/8.0)), EquipmentSlotType.HEAD, new Item.Properties().group(Fullyrandom.setup.itemGroup), i).setRegistryName("r_helmet" + i));
+                chestplates.add(new RandomArmorItem(Randomizer.blockProperties.getArmorTier(i, 1f, 1f), EquipmentSlotType.CHEST, new Item.Properties().group(Fullyrandom.setup.itemGroup), i).setRegistryName("r_chestplate" + i));
+                leggings.add(new RandomArmorItem(Randomizer.blockProperties.getArmorTier(i, (float) (495.0/528.0), (float) (6.0/8.0)), EquipmentSlotType.LEGS, new Item.Properties().group(Fullyrandom.setup.itemGroup), i).setRegistryName("r_leggings" + i));
+                boots.add(new RandomArmorItem(Randomizer.blockProperties.getArmorTier(i, (float) (429.0/528.0), (float) (3.0/8.0)), EquipmentSlotType.FEET, new Item.Properties().group(Fullyrandom.setup.itemGroup), i).setRegistryName("r_boots" + i));
+            } else {
+                helmets.add(null); chestplates.add(null); leggings.add(null); boots.add(null);
             }
         }
     }
