@@ -21,24 +21,27 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-/run/
-/.idea/
-/run/.mixin.out/
-/run/config/
-/run/defaultconfigs/
-/run/logs/*
-/run/mods/
-/run/resourcepacks/
-/run/saves/
-/run/options.txt
-/run/usercache.json
-/run/usernamecache.json
-/logs/
-/logs/*
-/build/
-/build/*
-/.idea/*
-/.gradle/
-/.gradle/*
+run/
+.idea/
+run/.mixin.out/
+run/config/
+run/defaultconfigs/
+run/logs/*
+run/mods/
+run/resourcepacks/
+run/saves/
+run/options.txt
+run/usercache.json
+run/usernamecache.json
+logs/
+logs/*
+build/
+build/*
+.idea/*
+.gradle/
+.gradle/*
+run
+.idea
+
 
 
