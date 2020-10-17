@@ -4,6 +4,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IItemProvider;
 import over.fullyrandom.blocks.ModBlocks;
+import over.fullyrandom.world.biomes.ModBiomes;
 
 public class ModSetup {
 
@@ -15,7 +16,7 @@ public class ModSetup {
     };
 
     public void init() {
-
+        //ModBiomes.setup();
     }
 
 }

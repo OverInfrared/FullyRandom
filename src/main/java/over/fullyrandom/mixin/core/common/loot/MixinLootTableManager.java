@@ -2,18 +2,14 @@ package over.fullyrandom.mixin.core.common.loot;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.gson.Gson;
-import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
 import net.minecraft.client.resources.JsonReloadListener;
 import net.minecraft.loot.*;
 import net.minecraft.profiler.IProfiler;
 import net.minecraft.resources.IResourceManager;
 import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.common.ForgeHooks;
 import org.spongepowered.asm.mixin.*;
 import over.fullyrandom.Fullyrandom;
-import over.fullyrandom.config.MainConfig;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.Map;
@@ -36,6 +32,7 @@ public class MixinLootTableManager extends JsonReloadListener {
 
     /**
      * @author OverInfrared
+     * @reason Creates and loads built in loottables.
      */
     @ParametersAreNonnullByDefault
     @Overwrite
@@ -64,7 +61,7 @@ public class MixinLootTableManager extends JsonReloadListener {
         ImmutableMap<ResourceLocation, LootTable> immutablemap = builder.build();
         ValidationTracker validationtracker = new ValidationTracker(LootParameterSets.GENERIC, this.lootPredicateManager::func_227517_a_, immutablemap::get);
         immutablemap.forEach((p_227509_1_, p_227509_2_) -> {
-            LootTableManager.func_227508_a_(validationtracker, p_227509_1_, p_227509_2_);
+            LootTableManager.validateLootTable(validationtracker, p_227509_1_, p_227509_2_);
         });
         validationtracker.getProblems().forEach((p_215303_0_, p_215303_1_) -> {
             Fullyrandom.LOGGER.warn("Found validation problem in " + p_215303_0_ + ": " + p_215303_1_);

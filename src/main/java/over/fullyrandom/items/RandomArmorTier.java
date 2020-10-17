@@ -65,4 +65,5 @@ public class RandomArmorTier implements IArmorMaterial {
     public float getKnockbackResistance() {
         return this.knockbackResistance;
     }
+
 }

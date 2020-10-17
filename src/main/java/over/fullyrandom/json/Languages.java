@@ -15,6 +15,7 @@ public class Languages {
         JsonObject languageFile = new JsonObject();
 
         languageFile.addProperty("itemGroup.fullyrandom", "FullyRandom Mod");
+        languageFile.addProperty("generator.fullyrandom", "FullyRandom");
         OreLanguage.ore(languageFile);
 
         return languageFile;
@@ -38,6 +39,7 @@ public class Languages {
             languageFile.addProperty("item.fullyrandom.r_shovel" + index, name + " Shovel");
             languageFile.addProperty("item.fullyrandom.r_axe" + index, name + " Axe");
             languageFile.addProperty("item.fullyrandom.r_hoe" + index, name + " Hoe");
+            languageFile.addProperty("item.fullyrandom.r_nugget" + index, name + " Nugget");
             languageFile.addProperty("item.fullyrandom.r_helmet" + index, name + " Helmet");
             languageFile.addProperty("item.fullyrandom.r_chestplate" + index, name + " Chestplate");
             languageFile.addProperty("item.fullyrandom.r_leggings" + index, name + " Leggings");

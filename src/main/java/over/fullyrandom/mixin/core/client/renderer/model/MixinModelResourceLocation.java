@@ -19,6 +19,7 @@ public abstract class MixinModelResourceLocation extends ResourceLocation {
 
     /**
      * @author OverInfrared
+     * @reason finds when the game tries to load faker resource location.
      */
     @Overwrite
     protected static String[] parsePathString(String pathIn) {
@@ -87,6 +88,8 @@ public abstract class MixinModelResourceLocation extends ResourceLocation {
                 return "fullyrandom:axe#inventory";
             case "fullyrandomrhoe":
                 return "fullyrandom:hoe#inventory";
+            case "fullyrandomrnugget":
+                return "fullyrandom:nugget#inventory";
         }
         return pathIn;
     }

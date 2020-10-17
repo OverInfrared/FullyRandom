@@ -1,14 +1,16 @@
 package over.fullyrandom.items;
 
+import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
 import net.minecraft.item.crafting.Ingredient;
 
+@MethodsReturnNonnullByDefault
 public class RandomToolTier implements IItemTier {
 
-    private float attackDamage, efficiency;
-    private int durability, harvestLevel, enchantability;
-    private Item repairMaterial;
+    private final float attackDamage, efficiency;
+    private final int durability, harvestLevel, enchantability;
+    private final Item repairMaterial;
 
     public RandomToolTier(float attackDamage, float efficiency, int durability, int harvestLevel, int enchantability, Item repairMaterial) {
         this.attackDamage = attackDamage;

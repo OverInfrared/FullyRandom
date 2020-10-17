@@ -9,7 +9,6 @@ import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Shadow;
-import over.fullyrandom.Fullyrandom;
 import over.fullyrandom.json.Languages;
 
 import java.io.InputStream;
@@ -27,6 +26,7 @@ public class MixinLanguageMap {
 
     /**
      * @author OverInfrared
+     * @reason Finds fake language file and replaces with generated one.
      */
     @Overwrite
     public static void func_240593_a_(InputStream p_240593_0_, BiConsumer<String, String> p_240593_1_) {

@@ -2,6 +2,7 @@ package over.fullyrandom.mixin.core.client.renderer.entity.layers;
 
 import com.google.common.collect.Maps;
 import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
+import net.minecraft.entity.Entity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ItemStack;
@@ -10,6 +11,11 @@ import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.Redirect;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import over.fullyrandom.Fullyrandom;
 
 import javax.annotation.Nullable;
@@ -22,6 +28,7 @@ public class MixinBipedArmorLayer {
 
     /**
      * @author OverInfrared
+     * @reason Load uncolored armor textures for each item.
      */
     @Overwrite(remap = false)
     public ResourceLocation getArmorResource(net.minecraft.entity.Entity entity, ItemStack stack, EquipmentSlotType slot, @Nullable String type) {
@@ -56,6 +63,7 @@ public class MixinBipedArmorLayer {
 
         return resourcelocation;
     }
+
 
     private boolean isLegSlot(EquipmentSlotType slotIn) {
         return slotIn == EquipmentSlotType.LEGS;

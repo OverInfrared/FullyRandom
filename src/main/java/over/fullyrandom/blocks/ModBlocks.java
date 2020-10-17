@@ -3,20 +3,24 @@ package over.fullyrandom.blocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.FallingBlock;
 import over.fullyrandom.Randomizer;
+import over.fullyrandom.config.MainConfig;
+
 import java.util.ArrayList;
 
 public class ModBlocks {
 
-    public static ArrayList<Object> oreBlocks = new ArrayList<>();
+    public static final ArrayList<Object> oreBlocks = setOreBlocks(MainConfig.oreAmount.get());
 
-    public static void setOreBlocks(int amount) {
+    public static ArrayList<Object> setOreBlocks(int amount) {
+        ArrayList<Object> blocks = new ArrayList<>();
         for (int i = 0; i < amount; i++) {
             Randomizer.blockProperties.getMaterial(i);
             if (Randomizer.blockProperties.material.get(i).name().equals("SAND") || Randomizer.blockProperties.material.get(i).name().equals("GRAVEL"))
-                oreBlocks.add(new FallingBlock(Randomizer.blockProperties.getProperties(i)).setRegistryName("fullyrandom:r_ore" + i));
+                blocks.add(new FallingBlock(Randomizer.blockProperties.getProperties(i)).setRegistryName("fullyrandom:r_ore" + i));
             else
-                oreBlocks.add(new Block(Randomizer.blockProperties.getProperties(i)).setRegistryName("fullyrandom:r_ore" + i));
+                blocks.add(new Block(Randomizer.blockProperties.getProperties(i)).setRegistryName("fullyrandom:r_ore" + i));
         }
+        return blocks;
     }
 
 }
