@@ -48,7 +48,8 @@ public class Languages {
 
         private static String consonants = "bcdfghjklmnpqrstvwxyz";
         private static String vowels = "aeiou";
-        private static String[] suffixes = {"mond", "ld", "on", "is", "tz", "stone", "al", "ite", "mite", "tine", "cium", "lium", "ian", "n", "thyst", "lite", "yl", "cite", "pper", "er", "co", "ium", "ma", "balt", "nc", "ad", "ury", "ckel", "ver", "in"};
+        //                                  "mond", "ld", "on", "is", "tz", "stone", "al", "ite", "mite", "tine", "cium", "lium", "ian", "n", "thyst", "lite", "yl", "cite", "pper", "er", "co", "ium", "ma", "balt", "nc", "ad", "ury", "ckel", "ver", "in"
+        private static String[] suffixes = {"mond", "ld", "on", "um", "ule", "ion", "ment", "icle", "ile", "ole", "ule", "ate", "and", "ant", "yn", "ice", "ixe", "stone", "ia", "ium", "pper", "er", "ckel", "n", "al"};
 
         private static String getOreName(int index) {
 
@@ -63,32 +64,21 @@ public class Languages {
             int letter3 = random1.nextInt(vowels.length());
             int suffix = random0.nextInt(suffixes.length);
 
-            if (random2.nextBoolean()) {
-                if (random0.nextBoolean()) {
-                    if (random1.nextBoolean()) {
-                        return consonants.substring(letter0, letter0 + 1).toUpperCase() + consonants.charAt(letter1) + vowels.charAt(letter2) + vowels.charAt(letter3) + suffixes[suffix];
-                    }
-                    return consonants.substring(letter0, letter0 + 1).toUpperCase() + consonants.charAt(letter1) + vowels.charAt(letter2) + suffixes[suffix];
-                } else {
-                    if (random1.nextBoolean()) {
-                        return vowels.substring(letter2, letter2 + 1).toUpperCase() + consonants.charAt(letter0) + vowels.charAt(letter3) + suffixes[suffix];
-                    }
-                    return consonants.substring(letter0, letter0 + 1).toUpperCase() + vowels.charAt(letter2) + suffixes[suffix];
-                }
-            } else {
-                if (random0.nextBoolean()){
-                    if (random1.nextBoolean()) {
-                        return consonants.substring(letter0, letter0 + 1).toUpperCase() + vowels.charAt(letter2) + vowels.charAt(letter3) + suffixes[suffix];
-                    }
-                    return consonants.substring(letter0, letter0 + 1).toUpperCase() + vowels.charAt(letter2) + consonants.charAt(letter1) + vowels.charAt(letter3) + suffixes[suffix];
-                } else {
-                    if (random1.nextBoolean()) {
-                        return vowels.substring(letter2, letter2 + 1).toUpperCase() + consonants.charAt(letter0) + consonants.charAt(letter1) + vowels.charAt(letter3) + suffixes[suffix];
-                    }
-                    return consonants.substring(letter0, letter0 + 1).toUpperCase() + consonants.charAt(letter1) + consonants.charAt(letter4) + vowels.charAt(letter2) + suffixes[suffix];
-                }
-            }
-
+            return random2.nextBoolean() ?
+                random0.nextBoolean() ?
+                    random1.nextBoolean() ?
+                        consonants.substring(letter0, letter0 + 1).toUpperCase() + consonants.charAt(letter1) + vowels.charAt(letter2) + vowels.charAt(letter3) + suffixes[suffix]
+                        : consonants.substring(letter0, letter0 + 1).toUpperCase() + consonants.charAt(letter1) + vowels.charAt(letter2) + suffixes[suffix]
+                    : random1.nextBoolean() ?
+                        vowels.substring(letter2, letter2 + 1).toUpperCase() + consonants.charAt(letter0) + vowels.charAt(letter3) + suffixes[suffix]
+                        : consonants.substring(letter0, letter0 + 1).toUpperCase() + vowels.charAt(letter2) + suffixes[suffix]
+                : random0.nextBoolean() ?
+                    random1.nextBoolean() ?
+                        consonants.substring(letter0, letter0 + 1).toUpperCase() + vowels.charAt(letter2) + vowels.charAt(letter3) + suffixes[suffix]
+                        : consonants.substring(letter0, letter0 + 1).toUpperCase() + vowels.charAt(letter2) + consonants.charAt(letter1) + vowels.charAt(letter3) + suffixes[suffix]
+                    : random1.nextBoolean() ?
+                        vowels.substring(letter2, letter2 + 1).toUpperCase() + consonants.charAt(letter0) + consonants.charAt(letter1) + vowels.charAt(letter3) + suffixes[suffix]
+                        : consonants.substring(letter0, letter0 + 1).toUpperCase() + consonants.charAt(letter1) + consonants.charAt(letter4) + vowels.charAt(letter2) + suffixes[suffix];
         }
 
     }

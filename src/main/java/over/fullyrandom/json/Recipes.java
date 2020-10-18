@@ -1,6 +1,7 @@
 package over.fullyrandom.json;
 
 import com.google.common.collect.ImmutableMap;
+import com.google.common.collect.Maps;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -26,11 +27,11 @@ import static over.fullyrandom.util.CommonMethods.getMax;
 
 public class Recipes {
 
-    private static Map<IRecipeType<?>, ImmutableMap.Builder<ResourceLocation, IRecipe<?>>> map;
+    private static final HashMap<IRecipeType<?>, ImmutableMap.Builder<ResourceLocation, IRecipe<?>>> map = Maps.newHashMap();
 
-    public Recipes(Map<IRecipeType<?>, ImmutableMap.Builder<ResourceLocation, IRecipe<?>>> map) {
-        Recipes.map = map;
+    public static HashMap<IRecipeType<?>, ImmutableMap.Builder<ResourceLocation, IRecipe<?>>> getMap() {
         OreRecipes.createOreRecipes();
+        return Recipes.map;
     }
 
     private static class OreRecipes {

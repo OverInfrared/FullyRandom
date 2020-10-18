@@ -8,7 +8,6 @@ import com.google.gson.JsonObject;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.LootTableManager;
 import net.minecraft.util.ResourceLocation;
-import over.fullyrandom.Fullyrandom;
 import over.fullyrandom.Randomizer;
 import over.fullyrandom.config.MainConfig;
 
@@ -16,16 +15,17 @@ public class LootTables {
 
     private static ImmutableMap.Builder<ResourceLocation, LootTable> builder;
     private static Gson GSON_INSTANCE;
-    private static net.minecraft.resources.IResource res;
+    //private static net.minecraft.resources.IResource res;
     private static LootTableManager lootTableManager;
 
-    public LootTables(ImmutableMap.Builder<ResourceLocation, LootTable> builder, Gson GSON_INSTANCE, net.minecraft.resources.IResource res, LootTableManager lootTableManager) {
+    public static ImmutableMap.Builder<ResourceLocation, LootTable> getLootTables(ImmutableMap.Builder<ResourceLocation, LootTable> builder, Gson GSON_INSTANCE, LootTableManager lootTableManager) {
         LootTables.builder = builder;
         LootTables.GSON_INSTANCE = GSON_INSTANCE;
-        LootTables.res = res;
+        //LootTables.res = res;
         LootTables.lootTableManager = lootTableManager;
 
         createLootTables();
+        return builder;
     }
 
     public static void createLootTables() {
@@ -37,7 +37,7 @@ public class LootTables {
         private static void createOreLootTables() {
             for (int i = 0; i< MainConfig.oreAmount.get(); i++) {
                 ResourceLocation resourceLocation = new ResourceLocation("fullyrandom:blocks/r_ore" + i);
-                LootTable loottable = net.minecraftforge.common.ForgeHooks.loadLootTable(GSON_INSTANCE, resourceLocation, createOreJson(i), res == null || !res.getPackName().equals("Default"), lootTableManager);
+                LootTable loottable = net.minecraftforge.common.ForgeHooks.loadLootTable(GSON_INSTANCE, resourceLocation, createOreJson(i), true, lootTableManager);
                 builder.put(resourceLocation, loottable);
             }
         }
